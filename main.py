@@ -98,5 +98,5 @@ if __name__ == "__main__":
     if pars_name.aggregate:
         agg_cortege = splitter(pars_name.aggregate)
         data = get_agg_data(data, header, agg_cortege)
-        agg_header = [agg_cortege[1]]
-    print(tabulate(data, headers=agg_header, tablefmt="grid"))
+        header = [agg_cortege[1]]
+    print(tabulate(data, headers=header, tablefmt="grid"))
